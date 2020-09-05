@@ -35,6 +35,11 @@ footer {
   font-size: 34px;
 }
 
+.location {
+  background-color: #0053c0;
+  color: white;
+}
+
 input[type="text"] {
   background-color: #0053c0;
   border-radius: 30px;
