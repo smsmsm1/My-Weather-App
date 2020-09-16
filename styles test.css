@@ -1,3 +1,4 @@
+/* Sophie's Weather App Heading */
 .Col-1 {
   background: #0053c0;
   text-align: center;
@@ -9,37 +10,29 @@
   padding: 35px;
   color: white;
 }
+
+/* City Heading */
 .city {
   font-size: 44px;
 }
 
+/* Icon next to City Heading */
 .icon-style img {
   float: center;
 }
 
-.weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
-}
-
+/* Open-Source Code by Sophie Maher */
 footer {
   text-align: center;
 }
 
-.temp {
-  font-size: 24px;
-}
-
-.temperature-amount {
-  font-size: 34px;
-}
-
+/* Current Location wording in location button */
 .location {
   background-color: #0053c0;
   color: white;
 }
 
+/* Please enter your City 🔎 button */
 input[type="text"] {
   background-color: #0053c0;
   border-radius: 30px;
@@ -49,6 +42,7 @@ input[type="text"] {
   color: white;
 }
 
+/* Search button */
 input[type="submit"] {
   background-color: #0053c0;
   border: 2pt solid #0053c0;
@@ -57,50 +51,48 @@ input[type="submit"] {
   color: white;
 }
 
+/* Please enter your City 🔎 text colour in button */
 ::placeholder {
   color: white;
 }
 
+.Container {
+}
+
+/* The 5 x bootstrap card */
 .card-body {
   text-align: center;
-  border-radius: 20px;
-  border: 2pt solid #0053c0;
+  border: 3pt solid #0053c0;
   border-radius: 17px;
   margin: 0 auto;
-  padding: 9px;
+  padding: 15px;
   background: white;
-  margin-top: 2px;
   width: 8rem;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
+/* 5 x forecast cards alligned in container */
 .card-deck {
-  margin: -5rem;
+  margin: -6rem;
 }
 
+/* Background of web page */
 body {
   background: radial-gradient(circle, rgb(66, 217, 219), rgb(255, 228, 174));
   font-family: Montserrat;
 }
 
-.text-center {
-  margin-top: 3px;
-}
-
 .card-body-1 {
   text-align: center;
-  border-radius: 20px;
-  border: 2pt solid #0053c0;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 3pt solid #0053c0;
   padding: 90px;
+  max-width: 800px;
   background: radial-gradient(ellipse at top, #ffe4ae, transparent),
     radial-gradient(ellipse at bottom, #42d9db, transparent);
-}
-
-.row-no-gutters {
-  text-align: center;
-  border-radius: 15px;
-  border: 2pt solid #ababfd;
-  border-radius: 4px;
 }
 
 .card {
@@ -111,13 +103,7 @@ body {
 }
 
 .h2 {
-  text-align: center;
-}
-
-.col-md-8 {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+  text-align: right;
 }
 
 .card-title {
