@@ -81,3 +81,35 @@ function currentLocation() {
 
 let getLocation = document.querySelector("#location");
 getLocation.addEventListener("click", currentLocation);
+
+function search(city) {
+  let apiKey = "300911517fb102390670104d7a123f35";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayForecast);
+}
+
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = null;
+
+  for (let index = 0; index < 5; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+    <div class="col-2" id="forecast">
+      <h5 class="card-title">
+        ${formatHours(forecast.dt * 1000)}
+        <img src= "http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }.png" >
+     <small> <strong>${Math.round(
+       forecast.main.temp_max
+     )}Â°</strong> /${Math.round(forecast.main.temp_min)}Â°</small>
+      </h5>
+      <div class="col-2" id="forecast">
+          </div>
+  `;
+  }
+}
