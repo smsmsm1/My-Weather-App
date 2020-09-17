@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sophie's Weather App </title>
+    <title>Sophie's Weather App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/809b49a972.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./styles test.css" />
 </head>
 
 <body>
@@ -16,9 +18,7 @@
             <h1>Sophie's Weather App</h1>
         </div>
     </div>
-    <br />
-
-    <div class="card" style="width: 68rem;">
+       <div class="card" style="width: 68rem;">
         <div class="card-body-1">
         <div class ="icon-style"> 
             <img alt="clear" id="icon" src="http://openweathermap.org/img/wn/01d@2x.png">
@@ -46,7 +46,7 @@
             <br />
             <br />
             <div class="card-deck">
-                <div class="col-2" id="forecast">
+                <div class="row" id="forecast">
                     <div class="card-body" style="height: 10rem;" ;>
                         <h5 class="card-title">
                             Monday
@@ -57,62 +57,16 @@
             </div>
                 </div>
                 </div>
-                <div class="col-2" id="forecast">
-                    <div class="card-body" style="height: 10rem;" ;>
-                        <h5 class="card-title">
-                            Tuesday
-                        </h5>
-                        <p class="card-text"><img src="http://openweathermap.org/img/wn/01d.png"></p>
-                        <div class="weather-forecast-temperature">
-                            <strong>22°</strong> 17°
-                        </div>
-                    </div>
-                </div>
-            <div class="col-2" id="forecast">
                 
-                
-                <div class="card-body" style="height: 10rem;" ;>
-                    <h5 class="card-title">
-                        Wednesday
-                    </h5>
-                    <p class="card-text"><img src="http://openweathermap.org/img/wn/01d.png"></p>
-                    <div class="weather-forecast-temperature">
-                        <strong>22°</strong> 17°
-                    </div>
-                </div>
-            </div>
-            <div class="col-2" id="forecast">
-                <div class="card-body" style="height: 10rem;" ;>
-                    <h5 class="card-title">
-                        Thursday
-                    </h5>
-                    <p class="card-text"><img src="http://openweathermap.org/img/wn/01d.png"></p>
-                    <div class="weather-forecast-temperature">
-                        <strong>22°</strong> 17°
-                    </div>
-                </div>
-            </div>
-            <div class="col-2" id="forecast">
-                <div class="card-body" style="height: 10rem;" ;>
-                    <h5 class="card-title">
-                        Friday
-                    </h5>
-                    <p class="card-text"><img src="http://openweathermap.org/img/wn/01d.png"></p>
-                    <div class="weather-forecast-temperature">
-                        <strong>22°</strong> 17°
-                    </div>
-                </div>
-            </div>
-                </div>
-                    <br />
+                  
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <footer><a href="https://github.com/smsmsm1/My-Weather-App-Development">Open-Source Code</a> by <a
+    
+    <footer class="Signature"><a href="https://github.com/smsmsm1/My-Weather-App-Development">Open-Source Code</a> by <a
             href="https://www.linkedin.com/in/sophie-maher/">Sophie Maher</a> </footer>
-            <br>
+            
     <link rel="stylesheet" href="./styles test.css" />
     <script src="./index test.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

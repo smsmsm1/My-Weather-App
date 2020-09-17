@@ -9,6 +9,7 @@
   margin-top: 25px;
   padding: 35px;
   color: white;
+  margin-right: center;
 }
 
 /* City Heading */
@@ -72,11 +73,16 @@ input[type="submit"] {
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin-right: center;
 }
 
 /* 5 x forecast cards alligned in container */
 .card-deck {
   margin: -6rem;
+  padding: 22px;
+}
+
+.Signature {
 }
 
 /* Background of web page */
@@ -93,13 +99,16 @@ body {
   max-width: 800px;
   background: radial-gradient(ellipse at top, #ffe4ae, transparent),
     radial-gradient(ellipse at bottom, #42d9db, transparent);
+  margin: 0 auto;
 }
 
 .card {
   display: block;
-  margin: 0 auto;
+  margin: auto;
   border-style: none;
   background: none;
+  padding: 80px;
+  margin-right: center;
 }
 
 .h2 {
